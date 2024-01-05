@@ -1,0 +1,64 @@
+.page.four{
+    min-height: fit-content;
+    width: 100%;
+    position: relative;
+    z-index: var(--up-index);
+    background-color: var(--pri-color);
+    padding-bottom: 8vmax;
+}
+
+.p4-heading{
+    width: 100%;
+    color: var(--sec-color);
+    text-align: left;
+    position: relative;
+    left: 0;
+    animation: up-down 2.2s ease-in-out infinite;
+    padding: 7vmax 0 4vmax 0;
+    opacity: .72;
+    border-bottom: 1.6px solid grey;
+}
+
+.p4-heading .arrow{
+    position: absolute;
+    bottom: 0;
+    font-size: 18vmax;
+    left: 30%;
+    color: var(--trd-color);
+    z-index: var(--low-index);
+    opacity: 0.84;
+}
+
+@keyframes up-down {
+    0%, 100% {
+        transform: translateY(-1.5px);
+    }
+    50% {
+        transform: translateY(1.5px);
+    }
+}
+
+.p4-heading-box{
+    width: fit-content;
+    z-index: var(--up-index);
+}
+
+.p4-heading .line-p.desc{
+    height: 5vmax;
+    overflow: hidden;
+}
+
+.p4-heading .line-elem-p.p{
+    font-size: 3.2vmax;
+    font-family: fantasy;
+    font-weight: 200;
+    top: 5vmax;
+    margin-left: 1.1vmax;
+}
+
+
+@media (max-width: 1200px) {
+    .p4-heading .arrow{
+        left: 60%;
+    }
+}

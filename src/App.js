@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/* -- Byimaan -- */
 
-function App() {
+import './App.css';
+import LoadingPage from './Byimaan/Pages/LoadingPage/LoadingPage';
+import ReferenceProvider from './Byimaan/Management/Contexts/ReferenceProvider';
+import Hero from './Byimaan/Hero/Hero';
+import MsgProvider from './Byimaan/Management/Contexts/MsgProvider';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <ReferenceProvider>
+
+      <MsgProvider>
+        <Main/>
+      </MsgProvider>
+       
+    </ReferenceProvider>
+
+  );
+};
+
+function Main(){
+  return (
+    <div id="main">
+
+      {/* <LoadingPage/> */}
+
+      <Hero/>
+
     </div>
   );
-}
-
-export default App;
+};

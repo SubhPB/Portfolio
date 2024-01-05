@@ -1,0 +1,108 @@
+
+.initial-animation{
+    width: 100%;
+    position: relative;
+}
+
+.I-layer{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--pri-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.II-layer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--sec-color);
+}
+
+.layer-text{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.center-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cntr-top{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-weight: 100;
+}
+
+.cntr-h1{
+    display: block;
+    position: relative;
+    font-weight: lighter;
+    font-size: 2.5vmax;
+}
+
+.cntr-h1 span{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    padding-left: 1vmax;
+    left: 5%;
+    color: var(--sec-color)
+}
+
+.cntr-h1 span:nth-child(1){
+    color: red;
+    opacity: .7;
+}
+
+.cntr-h1 span:nth-child(2){
+    left: 10%;
+    opacity: .5;
+}
+
+.cntr-h1 span:nth-child(3){
+    left: 15%;
+    opacity: .3;
+}
+
+
+.loading-circle{
+    position: absolute;
+    display: block;
+    bottom: 3%;
+    left: 50%;
+    height: 1.4vmax;
+    width: 1.4vmax;
+    border: .5vmin solid transparent;
+    transform: translate(-50%,0);
+    border-radius: 50%;
+    border-left-color: var(--sec-color);
+    border-right-color: var(--sec-color);
+    animation: spinner 1.4s ease infinite;
+}
+
+@keyframes spinner {
+    100%{
+        transform: translate(-50%,0) rotate(360deg);
+    }
+} 
+
+
+@media (max-width: 1000px){
+    .cntr-h1{
+        font-size: 3.7vmax;
+    }
+
+    .loading-circle{
+        height: 2vmax;
+        width: 2vmax;
+    }
+    
+}

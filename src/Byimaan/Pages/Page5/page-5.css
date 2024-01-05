@@ -1,0 +1,173 @@
+.page.five{
+    min-height: fit-content;
+    padding: 3vmax 2vmax;
+    background-color: var(--pri-color);
+    z-index: var(--up-index);
+}
+
+.p5-top{
+    width: 100%;
+    font-size: 2.3vmax;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12vmax;
+}
+
+.p5-top h2{
+    font-family: var(--alt-font-family);
+    opacity: .85;
+    font-weight: 600;
+
+}
+
+.p5-top-left h2:nth-child(1){
+    font-size: 85%;
+}
+
+.p5-top-left h2:nth-child(2){
+    font-size: 80%;
+    text-align: right;
+}
+
+.p5-top-right{
+    font-size: 55%;
+    opacity: .99;
+    border-radius: 35px;
+    cursor: pointer;
+    border: 1.8px solid grey;
+    padding: 1.25vmax 2.1vmax;
+    margin-left: 2.5vmax;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p5-mid{
+    width: 100%;
+    padding-left: 32%;
+    margin-bottom: 3.2vmax;
+}
+
+
+.p5-mid.rev{
+    padding-left: 0;
+    padding-right: 32%;
+}
+
+.p5-mid .line-elem-p{
+    font-size: 1.1vmax;
+}
+
+.p5-btm{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p5-btm .line-p.desc{
+    height: 45vmin;
+}
+
+.p5-btm .line-elem-p {
+    font-family: fantasy;
+    font-weight: 200;
+    top: -45vmin;
+    font-size: 41vmin;
+}
+
+/* -- link component css -- */
+
+
+.p5-link{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vmax;
+}
+
+.p5-link-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    color: red;
+    opacity: .85;
+}
+
+.p5-link-right{
+    font-size: 1.2vmax;
+}
+
+.p5-link-right h2{
+    padding-top: 1vmin;
+    font-family: var(--alt-font-family);
+    font-weight: 600;
+    opacity: .84;
+    cursor: pointer;
+}
+
+.p5-link-right h2:nth-child(1){
+    font-size: 100%;
+}
+
+.p5-link-right.academic h2:nth-child(1){
+    color: red;
+}
+
+.p5-link-right h2:nth-child(2){
+    font-size: 87%;
+}
+
+.p5-link-right h2:nth-child(3){
+    font-size: 72%;
+    font-weight: 400;
+}
+
+
+.p5-link.rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1200px){
+    .p5-top {
+        font-size: 3.6vmax;
+    }
+
+    .p5-mid{
+        padding-left: 15%
+    }
+
+    .p5-mid.rev{
+        padding-left: 0;
+        padding-right: 15%;
+    }
+
+    .p5-mid .line-elem-p{
+        font-size: 1.6vmax;
+    }
+
+    .p5-btm{
+        padding-top: 4vmax;
+    }
+
+    .p5-btm .line-p.desc{
+        height: 30vmin
+    }
+
+    .p5-btm .line-elem-p{
+        font-size: 22vmin;
+    }
+    
+    .p5-link-right{
+        font-size: 2.2vmax;
+    }
+}

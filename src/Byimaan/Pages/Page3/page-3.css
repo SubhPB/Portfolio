@@ -1,0 +1,232 @@
+.page.three{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: var(--up-index);
+    background-color: var(--pri-color);
+}
+
+.skills-circle{
+    position: absolute;
+    height: 180vh;
+    width: 180vh;
+    border-radius: 50%;
+    top: 50%;
+    left: -90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(0,-50%) rotate(-22.5deg); */
+    transform: translate(0,-50%) rotate(0deg);
+
+    border: 1.1px solid grey;
+}
+
+.stripe{
+    position: absolute;
+    height: 5vmax;
+    width: 100%;
+    left: 50%;
+    transform-origin: 0 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0.75;
+}
+
+.stripes.frontend .stripe:nth-child(1){
+    transform: translate(0,-50%) rotate(-37.5deg);
+}
+
+.stripes.frontend .stripe:nth-child(2){
+    transform: translate(0,-50%) rotate(-30deg);
+}
+
+.stripes.frontend .stripe:nth-child(3){
+    transform: translate(0,-50%) rotate(-22.5deg);
+}
+
+.stripes.frontend .stripe:nth-child(4){
+    transform: translate(0,-50%) rotate(-15deg);
+}
+
+.stripes.frontend .stripe:nth-child(5){
+    transform: translate(0,-50%) rotate(-7.5deg);
+}
+
+.stripes.frontend .stripe:nth-child(6){
+    transform: translate(0,-50%) rotate(0deg);
+}
+
+.stripes.core .stripe:nth-child(1){
+    transform: translate(0,-50%) rotate(7.5deg);
+}
+
+.stripes.core .stripe:nth-child(2){
+    transform: translate(0,-50%) rotate(15deg);
+}
+
+.stripes.core .stripe:nth-child(3){
+    transform: translate(0,-50%) rotate(22.5deg);
+    opacity: .9;
+}
+
+.stripes.core .stripe:nth-child(4){
+    transform: translate(0,-50%) rotate(30deg);
+}
+
+.stripes.core .stripe:nth-child(5){
+    transform: translate(0,-50%) rotate(37.5deg);
+}
+
+.stripes.core .stripe:nth-child(6){
+    transform: translate(0,-50%) rotate(45deg);
+}
+
+.stripes.backend .stripe:nth-child(1){
+    transform: translate(0,-50%) rotate(52.5deg);
+}
+
+.stripes.backend .stripe:nth-child(2){
+    transform: translate(0,-50%) rotate(60deg);
+}
+
+.stripes.backend .stripe:nth-child(3){
+    transform: translate(0,-50%) rotate(67.5deg);
+}
+
+.stripes.backend .stripe:nth-child(4){
+    transform: translate(0,-50%) rotate(75deg);
+}
+
+.stripes.backend .stripe:nth-child(5){
+    transform: translate(0,-50%) rotate(82.5deg);
+}
+
+.stripe-left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.stripe-right{
+    height: 100%;
+    width: 50%;
+    font-size: 4vmax;
+    opacity: .8;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stripe-right h3{
+    font-size: 55%;
+    font-weight: 100;
+    color: var(--trd-color);
+    cursor: pointer;
+}
+
+.stripe-right h4{
+    font-size: 25%;
+    font-weight: 400;
+    font-family: var(--alt-font-family);
+    
+}
+
+.left-dot{
+    height: 2.2vmin;
+    width: 2.2vmin;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: -1.1vmin;
+}
+
+.page3-panel{
+    position: absolute;
+    top: 0;
+    right: 1vmax;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7vmax;
+}
+
+.panel-dot{
+    height: 1vmax;
+    width: 1vmax;
+    background-color: grey;
+    border-radius: 50%;
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.page3-panel .panel-dot:nth-child(9){
+    opacity: 1
+}
+
+.skills-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 22%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .skills-wrapper .line-p{
+    background-color: yellow;
+    overflow: visible;
+} */
+
+.skill-name{
+    border-bottom: 1px solid var(--trd-color);
+    padding-bottom: 1vw;
+}
+
+.skill-name .line-elem-p.p{
+    font-family: fantasy;
+    font-weight: 100;
+    color: var(--trd-color);
+    font-size: 1.6;
+    /* top: 2.1vmax; */
+    top: 0
+}
+
+.skill-desc .line-elem-p.p{
+    /* top: 2.1vmax; */
+    font-size: 1.05vmax;
+    font-weight: 600;
+    top: 0
+}
+
+@media (max-width: 1200px){
+    .skills-circle{
+        left: -155vh;
+    }
+    .stripe-right{
+        padding-left: 2%;
+    }
+    .skills-wrapper{
+        width:48%;
+    }
+    .skill-name .line-elem-p.p{
+        font-size: 1.8vmax;
+        /* top:2.1vmax */
+    }
+    .skill-desc .line-elem-p.p{
+        font-size: 1.55vmax;
+    }
+}
+
+@media (min-width: 530px) and (max-width:1200px){
+    .skills-circle{
+        left: -137vh;
+    }
+}

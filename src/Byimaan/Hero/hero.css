@@ -1,0 +1,31 @@
+.hero{
+    background-color:  var(--pri-color);
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cursor{
+    height: 7.5vmax;
+    width: 7.5vmax;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    border-radius: 50%;
+    background-color: orangered;
+    color: var(--pri-color);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--crsr-index);
+    pointer-events: none;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+    .cursor{
+        display: none;
+    }
+}
