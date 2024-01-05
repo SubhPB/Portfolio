@@ -23,7 +23,7 @@ export default function P5Bottom(){
                         gsap.to(targets,{
                             top: '-45vmin',
                             duration: .5,
-                            stagger: -.1,
+                            // stagger: -.1,
                             ease: 'power2.inOut'
                         })
                     }
