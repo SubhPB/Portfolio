@@ -18,8 +18,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--pri-color);
-    z-index: 99;
-
+    z-index: var(--high-index);
 }
 
 .logo{

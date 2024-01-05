@@ -50,7 +50,7 @@
 
 .p4-heading .line-elem-p.p{
     font-size: 3.2vmax;
-    font-family: fantasy;
+    font-family: var(--pri-font-family);
     font-weight: 200;
     top: 5vmax;
     margin-left: 1.1vmax;

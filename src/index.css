@@ -45,6 +45,7 @@ html, body {
   --high-index: 25;
   --low-index: 18;
   --alt-font-family: sans-serif;
+  --pri-font-family: 'PassionOne', sans-serif;
 }
 
 .no-scroll{
