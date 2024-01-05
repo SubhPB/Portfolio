@@ -24,7 +24,7 @@ function Main(){
   return (
     <div id="main">
 
-      {/* <LoadingPage/> */}
+      <LoadingPage/>
 
       <Hero/>
 

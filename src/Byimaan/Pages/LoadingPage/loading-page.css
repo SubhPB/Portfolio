@@ -1,7 +1,9 @@
 
 .initial-animation{
     width: 100%;
-    position: relative;
+    position: absolute;
+    background-color: var(--pri-color);
+    z-index: var(--high-index);
 }
 
 .I-layer{

@@ -17,6 +17,8 @@ export default function LoadingPage(){
         txtTop: useRef(null),
     };
 
+    const rootParent = useRef(null);
+
     useEffect( () => {
 
         console.log(' useEffect of LoadingPage started ');
@@ -57,15 +59,20 @@ export default function LoadingPage(){
             delay: -2,
             duration: 2,
             bottom: '100%',
-            ease: 'power2.inOut'
+            ease: 'power2.inOut',
+            onComplete: () => {useScroll.unFreeze();}
         });
 
-        useScroll.unFreeze();
+        return () => { 
+            if (isFreezed){
+                useScroll.unFreeze();
+            }
+        };
 
     },[])
 
     return (
-        <div className="initial-animation">
+        <div ref={rootParent} className="initial-animation">
             <div ref={refs.iLayer} className="I-layer">
                 <div ref={refs.iiLayer} className="layer-text">
                     <h5 ref={refs.txtTop} className="cntr-top"><i className="ri-copyright-line"></i> 2024 legal </h5>
